@@ -45,7 +45,7 @@ def valid_accuracy_loss_plots(train_losses, train_acc, test_losses, test_acc):
     axs[1, 1].plot(test_acc)
     axs[1, 1].set_title("Test Accuracy")
 
-def show_misclassified_images(model,classes, test_loader, num_of_images = 10):
+def show_misclassified_images(model, classes, test_loader, num_of_images = 10):
     """ Display missclassified images """
     imgs = []
     labels = []
