@@ -13,7 +13,7 @@ from torch.optim.lr_scheduler import StepLR
 from tqdm import tqdm
 
 
-def test(model, device, test_loader):
+def test(model, device, test_loader, test_losses, test_acc):
     """Test the model performance"""
     model.eval()
     test_loss = 0
